@@ -631,6 +631,88 @@ width: 33%;
 .copyright p {
    margin: 0;
 }
+/*whatsapp integration*/
+.whatsapp-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .whatsapp-icon i {
+            color: white;
+            font-size: 30px;
+        }
+
+        /* Popup container */
+        .popup {
+            display: none;
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            padding: 20px;
+        }
+
+        .popup-header {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .popup-body {
+            margin-bottom: 20px;
+        }
+
+        .popup-body textarea {
+            width: 100%;
+            height: 80px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            font-size: 14px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .popup-footer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .popup-footer button {
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .send-button {
+            background-color: #25D366;
+        }
+
+        .chat-button {
+            background-color: #007BFF;
+        }
+
+        .whatsapp-icon:hover, .send-button:hover, .chat-button:hover {
+            opacity: 0.8;
+        }
 
 </style>
 </head>
@@ -639,7 +721,7 @@ width: 33%;
     <nav class="menu__wrapper-abhishyandh-N">
         <div class="menu__bar-abhishyandh-N">
             <a
-                href="#"
+               th:href="@{/Website}"
                 title="Logo-abhishyandh-N"
                 class="logo-abhishyandh-N">
                 <img th:src="@{/images/A-images/logo.jpg}" style="width: 100px; height: 60px;">
@@ -741,6 +823,9 @@ width: 33%;
             <li><a th:href="@{/DotNetCourse}" class="courses">Dot Net Full Stack Development</a></li>
             <li><a th:href="@{/PowerBi}" class="courses">Power BI</a></li>
             <li><a th:href="@{/ArtificialIntelligenceMl}" class="courses">AI/ML</a></li>
+            <li><a th:href="@{/Angular}" class="courses">Angular</a></li>
+            <li><a th:href="@{/React}" class="courses">React</a></li>
+            <li><a th:href="@{/ionic}" class="courses">Ionic</a></li>
         </ul>
         <h3 style="color: maroon;">MANAGEMENT</h3>
         <ul class="list-menu-items-abhishyandh-N">
@@ -790,33 +875,33 @@ width: 33%;
     
     <div class="container">
         <div class="internship-box web">
-            <a th:href="@{/Contact-Abhishyandh.html}"><img th:src="@{/images/A-images/webdevelopment.jpeg}" alt="Web Development Internship 1"></a>
+            <a th:href="@{/ITSERVICES}"><img th:src="@{/images/A-images/webdevelopment.jpeg}" alt="Web Development Internship 1"></a>
         </div>
         <div class="internship-box web">
-            <a th:href="@{/Contact-Abhishyandh.html}"><img th:src="@{/images/A-images/webdevelopment2.jpeg}" alt="Web Development Internship 2"></a>
+            <a th:href="@{/ITSERVICES}"><img th:src="@{/images/A-images/webdevelopment2.jpeg}" alt="Web Development Internship 2"></a>
         </div>
         <div class="internship-box web">
-            <a th:href="@{/Contact-Abhishyandh.html}"><img th:src="@{/images/A-images/webdevelopment3.jpeg}" alt="Web Development Internship 3"></a>
+            <a th:href="@{/ITSERVICES}"><img th:src="@{/images/A-images/webdevelopment3.jpeg}" alt="Web Development Internship 3"></a>
         </div>
         
         <div class="internship-box java">
-            <a th:href="@{/Contact-Abhishyandh.html}"><img th:src="@{/images/A-images/javadevelopment.jpeg}" alt="Java Development Internship 1"></a>
+            <a th:href="@{/ITSERVICES}"><img th:src="@{/images/A-images/javadevelopment.jpeg}" alt="Java Development Internship 1"></a>
         </div>
         <div class="internship-box java">
-            <a th:href="@{/Contact-Abhishyandh.html}"><img th:src="@{/images/A-images/javadevlopment2.jpg}" alt="Java Development Internship 2"></a>
+            <a th:href="@{/ITSERVICES}"><img th:src="@{/images/A-images/javadevlopment2.jpg}" alt="Java Development Internship 2"></a>
         </div>
         <div class="internship-box java">
-            <a th:href="@{/Contact-Abhishyandh.html}"><img th:src="@{/images/A-images/javadevelopment3.jpeg}" alt="Java Development Internship 3"></a>
+            <a th:href="@{/ITSERVICES}"><img th:src="@{/images/A-images/javadevelopment3.jpeg}" alt="Java Development Internship 3"></a>
         </div>
         
         <div class="internship-box python">
-            <a th:href="@{/Contact-Abhishyandh.html}"><img th:src="@{/images/A-images/pythondevelopment1.jpeg}" alt="Python Development Internship 1"></a>
+            <a th:href="@{/ITSERVICES}"><img th:src="@{/images/A-images/pythondevelopment1.jpeg}" alt="Python Development Internship 1"></a>
         </div>
         <div class="internship-box python">
-            <a th:href="@{/Contact-Abhishyandh.html}"><img th:src="@{/images/A-images/pythondevelopment4.jpg}" alt="Python Development Internship 2"></a>
+            <a th:href="@{/ITSERVICES}"><img th:src="@{/images/A-images/pythondevelopment4.jpg}" alt="Python Development Internship 2"></a>
         </div>
         <div class="internship-box python">
-            <a th:href="@{/Contact-Abhishyandh.html}"><img th:src="@{/images/A-images/pythondevelopmenty3.jpeg}" alt="Python Development Internship 3"></a>
+            <a th:href="@{/ITSERVICES}"><img th:src="@{/images/A-images/pythondevelopmenty3.jpeg}" alt="Python Development Internship 3"></a>
         </div>
     </div>
 
@@ -830,7 +915,7 @@ width: 33%;
                             <div class="text">
                                 At Abhishyandh, we don't just offer internships – we provide launchpads for your career. Our internship program is designed to transform ambitious students into industry-ready professionals.
                             </div>
-                            <a th:href="@{/Contact-Abhishyandh.html}" class="button">Contact Abhishyandh</a>
+                            <a th:href="@{/Website}" class="button">Contact Abhishyandh</a>
                         </div>
                         <div class="right">
                             <img th:src="@{/images/A-images/internshipsimagepage..jpeg}" alt="Online recruitment illustration">
@@ -841,39 +926,22 @@ width: 33%;
         </div>
     </section>
     
-    <div class="padding">
-        <div class="info-box">
-            <center>
-                <h2>Prove that You are capable in IT industry with Our Internship Program</h2>
-                <h5>
-                    <span>Hands-on Experience:</span> Work on real projects in Web Development, Java, Python, or AI/ML.
-                </h5>
-                <h5>
-                    <span>Mentorship:</span> Learn from industry experts who guide your professional growth.
-                </h5>
-                <h5>
-                    <span>Skill Development:</span> Enhance both technical and soft skills through tailored workshops.
-                </h5>
-                <h5>
-                    <span>Networking:</span> Connect with professionals and build valuable industry relationships.
-                </h5>
-                <h5>
-                    <span>Flexible Schedule:</span> Balance your internship with academic commitments.
-                </h5>
-                <h5>
-                    <span>Career Advancement:</span> Potential for full-time employment upon successful completion.
-                </h5>
-                <h5>
-                    <span>Certificate of Completion:</span> Be part of a dynamic team that values fresh ideas and creativity.
-                </h5>
-            </center>
-        </div>
+    <div class="padding" style="padding: 30px; border: 1px solid blue; border-radius: 6px; box-shadow: 0 0 8px; width: 90%; margin-left: 50px;">
+        <center><h2 style="font-weight: bold; font-family: 'Times New Roman', Times, serif; color: maroon;">Prove that You are capable in IT industry with Our Intership Program</h2></center>
+      <center><h5><span style="font-weight: bold; color: navy;">Hands-on Experience : </span> Work on real projects in Web Development, Java, Python, or AI/ML.. </h5>
+        <h5 style="font-family: 'Times New Roman', Times, serif;"><span style="font-weight: bold; color: navy; font-family: 'Times New Roman', Times, serif;">Mentorship:</span>   Learn from industry experts who guide your professional growth. </h5>
+        <h5 style="font-family: 'Times New Roman', Times, serif;"><span style="font-weight: bold; color: navy; font-family: 'Times New Roman', Times, serif;">Skill Development:</span>   Enhance both technical and soft skills through tailored workshops. </h5>
+        <h5 style="font-family: 'Times New Roman', Times, serif;"><span style="font-weight: bold; color: navy; font-family: 'Times New Roman', Times, serif;">Networking:</span>   Connect with professionals and build valuable industry relationships. </h5>
+        <h5 style="font-family: 'Times New Roman', Times, serif;"><span style="font-weight: bold; color: navy; font-family: 'Times New Roman', Times, serif;">Flexible Schedule:</span>    Balance your internship with academic commitments. </h5>
+        <h5 style="font-family: 'Times New Roman', Times, serif;"><span style="font-weight: bold; color: navy; font-family: 'Times New Roman', Times, serif;">Career Advancement:</span>   Potential for full-time employment upon successful completion. </h5>
+        <h5 style="font-family: 'Times New Roman', Times, serif;"><span style="font-weight: bold; color: navy; font-family: 'Times New Roman', Times, serif;">Certificate of Completion:</span>   Be part of a dynamic team that values fresh ideas and creativity. </h5>
     </div>
+<div class="padding" style="padding: 30px;"></div>
   
 <!-- Footer Section -->
      <div class="padding" style="padding: 30px;"></div>
 
-    <section> 
+     <section> 
         <div class="dummy_page" id="footer">
             <h3 style="color: white;">Abhishyandh Global Solutions Pvt Ltd</h3>
         </div>
@@ -889,7 +957,7 @@ width: 33%;
                         <li>IT Services</li>
                         <li>Hr Services</li>
                         <li>BPO Services</li>
-                        <a href="Contact-Abhishyandh.html"><li>Get In Touch</li></a>
+                        <li><a th:href="@{/Website}"><li>Get In Touch</li></a></li>
                     </ul>
                 </div>
                 <div class="col">
@@ -900,7 +968,7 @@ width: 33%;
                         <li>Java Development</li>
                         <li>Python Development</li>
                         <li>Mobile Development</li>
-                        <a href="Contact-Abhishyandh.html"><li>Get In Touch</li></a>
+ 						<li><a th:href="@{/Website}"><li>Get In Touch</li></a></li>
                         
                     </ul>
                 </div>
@@ -912,7 +980,7 @@ width: 33%;
                         <li>040-6685-8189</li>
                         <li>info@abhishyandh.co.in</li>
                         <li>https://abhishyandh.co.in</li>
-                        <a href="Contact-Abhishyandh.html"><li>Get In Touch</li></a>
+                        <li><a th:href="@{/Website}"><li>Get In Touch</li></a></li>
                     </ul>
                 </div>
                 <div class="col">
@@ -922,7 +990,7 @@ width: 33%;
                         <li>Web Mails</li>
                         <li>hr@abhishyandh.co.in</li>
                         <li>info@abhishyandh.co.in</li>
-                        <a href="Contact-Abhishyandh.html"><li>Get In Touch</li></a>
+                       <li><a th:href="@{/Website}"><li>Get In Touch</li></a></li>
                     </ul>
                 </div>
                 <div class="col">
@@ -934,7 +1002,7 @@ width: 33%;
                         <li>Instagram</li>
                         <li>Youtube</li>
                         <li>FaceBook</li>
-                        <a href="Contact-Abhishyandh.html"><li>Get In Touch</li></a>
+                        <li><a th:href="@{/Website}"><li>Get In Touch</li></a></li>
                     </ul>
                 </div>
                      <div class="col">
@@ -942,12 +1010,12 @@ width: 33%;
                     <h1 style="color: black;">Follow Us On</h1>
                     <ul>
                         <p class="social-media">
-                            <a href="https://www.linkedin.com/company/abhishyandh-global-solutions/"><i class="bi bi-linkedin text-dark mx-1"></i></a>
-                            <a href="https://github.com/AbhiFlash-Coder"><i class="bi bi-github text-dark-mx-1"></i></a>
-                            <a href=""><i class="bi bi-twitter text-dark mx-1"></i></a>
-                            <a href="https://www.facebook.com/share/BxpiEC8qP9PP6ycj/?mibextid=qi2Omg"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                            <a href="https://www.instagram.com/abhishyandh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="bi bi-instagram text-dark mx-1"></i></a>
-                            <a href-""><i class="bi bi-youtube text-dark mx-1"></i></a>
+                            <a th:href="@{https://www.linkedin.com/company/abhishyandh-global-solutions/}"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a th:href="@{https://github.com/AbhiFlash-Coder}"><i class="bi bi-github text-dark-mx-1"></i></a>
+                            
+                            <a th:href="@{https://www.facebook.com/share/BxpiEC8qP9PP6ycj/?mibextid=qi2Omg}"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a th:href="@{https://www.instagram.com/abhishyandh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==}"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                             
                           
                         </p>  
                     </ul>
@@ -959,10 +1027,73 @@ width: 33%;
             </div>
         </div>
     </section>
-
     <div class="copyright-abhishyandh">
         <p>&copy; 2023 Abhishyandh. All rights reserved.</p>
     </div>
+    
+<!--whatsapp integration-->
+ <!-- WhatsApp Icon -->
+<div class="whatsapp-icon" id="whatsapp-icon">
+    <i class="fab fa-whatsapp"></i>
+</div>
+
+<!-- Popup -->
+<div class="popup" id="whatsapp-popup">
+    <div class="popup-header" style="color: orange;">Contact Abhishyandh</div>
+    <div class="popup-body">
+        <p style="color: green;">Feel free to send us a message below or chat directly with us on WhatsApp:</p>
+        <textarea id="message-input" placeholder="Type your message here..." style="resize: none;"></textarea>
+    </div>
+    <div class="popup-footer">
+        <button class="send-button" id="send-message-button">Send Message</button> &nbsp;&nbsp;&nbsp;
+        <button class="chat-button" id="chat-with-abhi-button">Chat with Abhishyandh</button>
+    </div>
+</div>
+
+ 
+
+<script>
+    const whatsappIcon = document.getElementById('whatsapp-icon');
+    const popup = document.getElementById('whatsapp-popup');
+    const sendMessageButton = document.getElementById('send-message-button');
+    const chatWithAbhiButton = document.getElementById('chat-with-abhi-button');
+    const messageInput = document.getElementById('message-input');
+    
+    // Toggle popup visibility
+    whatsappIcon.addEventListener('click', (event) => {
+        popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+        event.stopPropagation();  
+    });
+
+    // Send message button click
+    sendMessageButton.addEventListener('click', () => {
+        const message = encodeURIComponent(messageInput.value.trim());
+        if (message) {
+            const url = `https://wa.me/8897830910?text=${message}`;
+            window.open(url, '_blank');
+            messageInput.value = '';  
+        } else {
+            alert('Please enter a message.');
+        }
+    });
+
+    // Chat with Abhishyandh button click
+    chatWithAbhiButton.addEventListener('click', () => {
+        const prefilledMessage = encodeURIComponent('May I know more about this?');
+        const url = `https://wa.me/8897830910?text=${prefilledMessage}`;
+        window.open(url, '_blank');
+    });
+
+    // Close popup when clicking outside
+    document.addEventListener('click', (event) => {
+        if (!popup.contains(event.target) && !whatsappIcon.contains(event.target)) {
+            popup.style.display = 'none';
+        }
+    });
+</script>
+ 
+    
+    
 <script>
 	//navbar fixed and modify
 

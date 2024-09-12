@@ -9,7 +9,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import jakarta.validation.Valid;
+
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 
  
 
@@ -22,17 +26,44 @@ public class ContactController {
 	private Userservice userService;
 	 
 
+//	@GetMapping("/Website")
+//    public String hello(Model model) {
+//        model.addAttribute("contactForm", new ContactForm());
+//        return "Website";
+//    }
+//
+//    @PostMapping("/contact")
+//    public String submitContactForm(@ModelAttribute ContactForm contactForm) {
+//    	 
+//    	contactRepository.save(contactForm);
+//
+//    	return "redirect:/Website";
+//    }
+	
 	@GetMapping("/Website")
     public String hello(Model model) {
         model.addAttribute("contactForm", new ContactForm());
+         
+        if (model.containsAttribute("successMessage")) {
+            model.addAttribute("successMessage", model.asMap().get("successMessage"));
+        }
         return "Website";
     }
 
     @PostMapping("/contact")
-    public String submitContactForm(@ModelAttribute ContactForm contactForm) {
+    public String submitContactForm(@Valid @ModelAttribute("contactForm") ContactForm contactForm, BindingResult bindingResult, RedirectAttributes redirectAttributes) {
+        if (bindingResult.hasErrors()) {
+            return "redirect:/Website";  
+        }
+
+         
         contactRepository.save(contactForm);
-        return "redirect:/Website";
+        redirectAttributes.addFlashAttribute("successMessage", "Your message has been submitted successfully!");
+        return "redirect:/Website";  
     }
+
+    
+    
     
     
     @GetMapping("/AboutAbhishyandh")
@@ -156,6 +187,21 @@ public class ContactController {
     }
     
     
+    @GetMapping("/Angular")
+    public String Angular(Model model) {
+    	return "Angular";
+    }
+    
+    @GetMapping("/React")
+    public String React(Model model) {
+    	return "ReactJs";
+    }
+    
+    @GetMapping("/ionic")
+    public String Ionic(Model model) {
+    	return "Ionic";
+    }
+    
     @GetMapping("/Hr/recruitmentservice")
     public String RecruitmentService(Model model) {
     return "RecruitmentService";
@@ -208,7 +254,7 @@ public class ContactController {
     public String InterviewSkillDevelopment(Model model) {
     	return "InterviewSkillDevelopment";
     }
-    @GetMapping("businessdevelop")
+    @GetMapping("/businessdevelop")
     public String BusinessDevelopment(Model model) {
     	return "BusinessDevelopment";
     }
@@ -218,43 +264,26 @@ public class ContactController {
     	return "HROperations";
     	
     }
-    
     @GetMapping("/register")
-    public String showRegisterForm(Model model) {
+    public String showAbhishyandhRegister(Model model) {
         model.addAttribute("user", new User());
-        return "AbhishyandhRegister";  
+        return "AbhishyandhRegister";   
     }
 
     @PostMapping("/register")
-    public String registerUser(@ModelAttribute User user, RedirectAttributes redirectAttributes, Model model) {
+    public String registerUser(@ModelAttribute User user, RedirectAttributes redirectAttributes) {
         userService.saveUser(user);
         redirectAttributes.addFlashAttribute("message", "Registration successful!");
-        if (user.getFirstName() == null || user.getFirstName().isEmpty()) {
-            model.addAttribute("message", "First name is required");
-            return "AbhishyandhRegister";
-        }
-        if (user.getLastName() == null || user.getLastName().isEmpty()) {
-            model.addAttribute("message", "Last name is required");
-            return "AbhishyandhRegister";
-        }
-        if (user.getEmail() == null || user.getEmail().isEmpty() || !user.getEmail().matches("\\S+@\\S+\\.\\S+")) {
-            model.addAttribute("message", "Valid email is required");
-            return "AbhishyandhRegister";
-        }
-        if (user.getPhone() != null && !user.getPhone().isEmpty() && !user.getPhone().matches("\\d{10}")) {
-            model.addAttribute("message", "Phone must be 10 digits");
-            return "AbhishyandhRegister";
-        }
-
-        // If validation passes, process the registration
-        // Add your registration logic here (e.g., saving to database)
-
-        model.addAttribute("message", "Registration successful!");
-        return "redirect:/Website";
+        return "redirect:/register";
     }
 
    
-    
+    @GetMapping("/contact/ITTrainings")
+    public String showForm(Model model) {
+         
+        model.addAttribute("accessKey", "a99d74b0-031d-40ce-b814-909db08cc00c");
+        return "ITTRAININGS";  
+    }
     
     
 }

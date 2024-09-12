@@ -538,195 +538,271 @@ box-sizing: border-box;
     }
 }
 /*footer*/
-.body-footer {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    background: #1C1C1C;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-main {
-    flex: 1;
-}
-
-/*? footer containers */
-footer {
-    position: relative;
-    bottom: 0;
-    background: #161616;
-    width: 100%;
-    padding-top: 1rem;
-    display: flex;
-    flex-direction: column;
-}
-
- 
-
-
-.footer-wrapper {
-    display: flex;
-    flex-direction: column;
-    max-width: 64rem;
-    width: 100%;
-    margin: 0 auto;
-    padding: 1rem;
-}
-
-.footer-columns {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 4rem;
-    flex-wrap: wrap;
-    padding-top: 1rem;
-}
-
-.footer-logo-column {
-    padding-right: 10%;
-}
-
-.footer-logo {
-    margin-bottom: 1.5rem;
-    width: 14rem;
-}
-
- 
-.social-wrapper {
-    display: flex;
-    gap: 0.5rem;
-    margin: 0 auto;
-    margin-bottom: 2rem;
-}
-
-.social-links {
-    display: inline-flex;
-    gap: 0.5rem;
-    align-items: center;
-}
-
-.social-links a {
-    color: #7E7E7E;
-    text-decoration: none;
-}
-
-.social-links svg {
-    width: 2.5rem;
-    height: 2.5rem;
-    stroke: #7E7E7E;
-    transition: all 0.2s 
-        ease-in-out;
-}
-
-.social-links svg:hover {
-    stroke: #F9F9F9;
-}
-
-.social-links ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    list-style-type: none;
-}
-
- 
-.link-columns {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    flex-grow: 1;
-}
-
-.link-columns>div {
-    flex-grow: 1;
-    display: flex;
-    gap: 2rem;
-}
-
-.link-columns>div>section {
-    min-width: 8rem;
-    width: 50%;
-}
-
-.link-columns ul {
-    display: flex;
-    gap: 1rem;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    flex-direction: column;
-    font-weight: 600;
-}
-
-.link-columns ul a {
-    color:  #7E7E7E;
-    text-decoration: none;
-    transition: all 0.2s ease-in-out;
-}
-
-.link-columns ul a:hover {
-    color: #F9F9F9;
-}
-
-.link-columns h3 {
-    color: #F9F9F9;
-    margin-bottom: 1.5rem;
-    font-size: 1.1rem;
-}
-
- 
-.footer-bottom {
-    margin-top: 8rem;
-    width: 100%;
-    color:  #7E7E7E;
-}
-
-.footer-bottom-wrapper {
-    max-width:  64rem;
-    margin: 0 auto;
-    width: 100%;
-    padding: 2.5rem 1rem;
-    border-top: 1px solid 
-         #3E3E3E;
-}
-
-.footer-bottom small {
-    font-size: 1rem;
-    display: inline;
-    white-space: nowrap;
-}
-
-.footer-bottom>small {
-    font-size: 1rem;
-    width: 100%
-}
-
-@media screen and (min-width: 600px) {
-    .link-columns>div>section {
-        min-width: auto;
-    }
-}
-.h1-follow h1{
-    color: white; 
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
+.dummy_page {
+   height:100px;
+   width: 100%;
+   background-color: #74C69D;
+   text-align: center;
+   box-sizing: border-box;
+   padding: 60px 0px;
     
 }
-.Heading-Abhishyandh{
-    width: 100%;
-    height: 100px;
-    background-color: #3ECF8E;
+.footer {
+   width: 100%;
+   position: relative;
+   height: auto;
+   background-color: white;
+   overflow: hidden;
 }
-.Heading-Abhishyandh h2{
-    color: white;
-    text-align: center;
-    font-size: 35px;
-    margin-top: 20px;
+.footer .col {
+   width: 190px;
+   height: auto;
+   float: left;
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   padding: 0px 20px 20px 20px;
+    
 }
+.footer .col h1 {
+   margin: 0;
+   padding: 0;
+   font-family: inherit;
+   font-size: 12px;
+   line-height: 17px;
+   padding: 20px 0px 5px 0px;
+   color: rgba(255,255,255,0.2);
+   font-weight: normal;
+   text-transform: uppercase;
+   letter-spacing: 0.250em;
+}
+.footer .col ul li {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+.footer .col ul li {
+   color: #999999;
+   font-size: 14px;
+   font-family: inherit;
+   font-weight: bold;
+   padding: 5px 0px 5px 0px;
+   cursor:pointer;
+   transition: .2s;
+   -webkit-transition: .2s;
+   -moz-transition: .2s;
+}
+.social ul li {
+   display: inline-block;
+   padding-right: 5px !important;
+}
+.footer .col ul li:hover {
+   color: black;
+   transition: .1s;
+   -webkit-transition: .1s;
+   -moz-transition: .1s;
+}
+.clearfix {
+   clear: both;
+}
+@media only screen and (min-width:1280px) {
+   .contain {
+       width: 1200px;
+       margin: 0 auto;
+   }
+}
+@media only screen and (max-width:1139px) {
+.contain .social {
+width: 1000px;
+display: block;
+}
+.social h1{
+   margin: 0px;
+}
+}
+@media only screen and (max-width:950px) {
+   .footer .col {
+width: 33%;
+   }
+   .footer .col h1 {
+       font-size: 14px;
+   }
+   .footer .col ul li{
+       font-size: 13px;
+   }
+}
+@media only screen and (max-width:500px) {
+   .footer .col {
+       width: 50%;
+   }
+   .footer .col h1{
+       font-size: 14px;
+   }
+   .footer .col ul li {
+       font-size: 13px;
+   }
+}
+@media only screen and (max-width:340px) {
+   .footer .col{
+       width: 100%;
+   }
+}
+.social-media {
+   cursor: pointer;
+}
+
+/*copy right*/
+.copyright-abhishyandh{
+   background-color: #050510;
+   color: #999999;
+   text-align: center;
+   padding: 10px 0;
+   width: 100%;
+   font-size: 14px;
+}  
+.copyright p {
+   margin: 0;
+}
+
+
+/*apply*/
+#applyButton {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        #applyButton:hover {
+            background-color: #45a049;
+        }
+
+        #popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        #noOpenings {
+            font-size: 24px;
+            margin-bottom: 20px;
+            animation: moveUpDown 2s infinite;
+        }
+
+        #exploreInternships {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        #exploreInternships:hover {
+            background-color: #007B9A;
+            transform: scale(1.05);
+        }
+
+        @keyframes moveUpDown {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+/*whatsapp integration*/
+.whatsapp-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .whatsapp-icon i {
+            color: white;
+            font-size: 30px;
+        }
+
+        /* Popup container */
+        .popup {
+            display: none;
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            padding: 20px;
+        }
+
+        .popup-header {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .popup-body {
+            margin-bottom: 20px;
+        }
+
+        .popup-body textarea {
+            width: 100%;
+            height: 80px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            font-size: 14px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .popup-footer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .popup-footer button {
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .send-button {
+            background-color: #25D366;
+        }
+
+        .chat-button {
+            background-color: #007BFF;
+        }
+
+        .whatsapp-icon:hover, .send-button:hover, .chat-button:hover {
+            opacity: 0.8;
+        }
 
 </style>
 </head>
@@ -735,11 +811,12 @@ footer {
     <nav class="menu__wrapper-abhishyandh-N">
         <div class="menu__bar-abhishyandh-N">
             <a
-                href="#"
+                th:href="@{/Website}"
                 title="Logo-abhishyandh-N"
                 class="logo-abhishyandh-N">
                 <img th:src="@{/images/A-images/logo.jpg}" style="width: 100px; height: 60px;">
             </a>
+            
             <ul class="navigation-abhishyandh-N hide-abhishyandh-N">
                   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                  
@@ -754,13 +831,14 @@ footer {
                             <path d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"></path>
                         </svg>
                     </button>
+                    
                     <div class="dropdown-abhishyandh-N">
                         <ul class="list-items-with-description-abhishyandh-N" style="color: white;">
                             <li>
                                 <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-workflow color-fg-subtle mr-3">
                                     <path d="M1 3a2 2 0 0 1 2-2h6.5a2 2 0 0 1 2 2v6.5a2 2 0 0 1-2 2H7v4.063C7 16.355 7.644 17 8.438 17H12.5v-2.5a2 2 0 0 1 2-2H21a2 2 0 0 1 2 2V21a2 2 0 0 1-2 2h-6.5a2 2 0 0 1-2-2v-2.5H8.437A2.939 2.939 0 0 1 5.5 15.562V11.5H3a2 2 0 0 1-2-2Zm2-.5a.5.5 0 0 0-.5.5v6.5a.5.5 0 0 0 .5.5h6.5a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5ZM14.5 14a.5.5 0 0 0-.5.5V21a.5.5 0 0 0 .5.5H21a.5.5 0 0 0 .5-.5v-6.5a.5.5 0 0 0-.5-.5Z"></path>
                                 </svg>
-                                <a th:href="@{/ITSERVICES}">
+                                <a th:href="@{/ITSERVICES}" style="text-decoration: none;">
                                     <div class="item-title-abhishyandh-N">
                                         <h3 style="color: black;">IT SERVICES</h3>
                                         <p style="color: blue;text-decoration: none;">We Design and Develop your Dream Website</p>
@@ -771,7 +849,7 @@ footer {
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
                                     <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"/>
                                   </svg>
-                                <a th:href="@{/ITTRAININGS}">
+                                <a th:href="@{/ITTRAININGS}" style="text-decoration: none;">
                                     <div class="item-title-abhishyandh-N">
                                         <h3 style="color: black;">IT TRAININGS</h3>
                                         <p style="color: blue; text-decoration: none;">We Train you and shape your IT Future</p>
@@ -782,7 +860,7 @@ footer {
                                 <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-package color-fg-subtle mr-3">
                                     <path d="M12.876.64V.639l8.25 4.763c.541.313.875.89.875 1.515v9.525a1.75 1.75 0 0 1-.875 1.516l-8.25 4.762a1.748 1.748 0 0 1-1.75 0l-8.25-4.763a1.75 1.75 0 0 1-.875-1.515V6.917c0-.625.334-1.202.875-1.515L11.126.64a1.748 1.748 0 0 1 1.75 0Zm-1 1.298L4.251 6.34l7.75 4.474 7.75-4.474-7.625-4.402a.248.248 0 0 0-.25 0Zm.875 19.123 7.625-4.402a.25.25 0 0 0 .125-.216V7.639l-7.75 4.474ZM3.501 7.64v8.803c0 .09.048.172.125.216l7.625 4.402v-8.947Z"></path>
                                 </svg>
-                                 <a th:href="@{/HRSERVICES}">
+                                 <a th:href="@{/HRSERVICES}" style="text-decoration: none;">
                                     <div class="item-title-abhishyandh-N" style="color: black;">
                                     <h3 style="color: black;">HR SERVICES</h3>
                                        <p style="color: blue;text-decoration: none;">Empowering Your Business with Exceptional HR Solutions</p>
@@ -794,7 +872,7 @@ footer {
                                 <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-shield-check color-fg-subtle mr-3">
                                     <path d="M16.53 9.78a.75.75 0 0 0-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 0 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5-5Z"></path><path d="m12.54.637 8.25 2.675A1.75 1.75 0 0 1 22 4.976V10c0 6.19-3.771 10.704-9.401 12.83a1.704 1.704 0 0 1-1.198 0C5.77 20.705 2 16.19 2 10V4.976c0-.758.489-1.43 1.21-1.664L11.46.637a1.748 1.748 0 0 1 1.08 0Zm-.617 1.426-8.25 2.676a.249.249 0 0 0-.173.237V10c0 5.46 3.28 9.483 8.43 11.426a.199.199 0 0 0 .14 0C17.22 19.483 20.5 15.461 20.5 10V4.976a.25.25 0 0 0-.173-.237l-8.25-2.676a.253.253 0 0 0-.154 0Z"></path>
                                 </svg>
-                                <a th:href="@{/BPOSERVICES}">
+                                <a th:href="@{/BPOSERVICES}" style="text-decoration: none;">
                                     <div class="item-title-abhishyandh-N" style="color: black;">
                                         <h3 style="color: black;">BPO SERVICES</h3>
                                         <p style="color: blue; text-decoration: none">BPO: Empowering businesses to excel by focusing on what we can do best.</p>
@@ -837,6 +915,9 @@ footer {
             <li><a th:href="@{/DotNetCourse}" class="courses">Dot Net Full Stack Development</a></li>
             <li><a th:href="@{/PowerBi}" class="courses">Power BI</a></li>
             <li><a th:href="@{/ArtificialIntelligenceMl}" class="courses">AI/ML</a></li>
+            <li><a th:href="@{/Angular}" class="courses">Angular</a></li>
+            <li><a th:href="@{/React}" class="courses">React</a></li>
+            <li><a th:href="@{/ionic}" class="courses">Ionic</a></li>
         </ul>
         <h3 style="color: maroon;">MANAGEMENT</h3>
         <ul class="list-menu-items-abhishyandh-N">
@@ -852,7 +933,7 @@ footer {
     <a th:href="@{/Careers}" style="font-family: 'Times New Roman', Times, serif; font-size: 1.1rem; font-weight: bold; color: #173F5F;">Careers</a>
 </li>
 <li>
-    <a th:href="@{/Website}" style="font-family: 'Times New Roman', Times, serif; font-size: 1.1rem; font-weight: bold; color: #173F5F;">Contact Us</a>
+    <a th:href="@{/Website}" class="contact-link" style="font-family: 'Times New Roman', Times, serif; font-size: 1.1rem; font-weight: bold; color: #173F5F;">Contact Us</a>
 </li>
 <li>
     <a th:href="@{/register}"><button class="btn-navbar">Get Started</button></a>
@@ -876,11 +957,17 @@ footer {
 <div class="body-careers">
 <img th:src="@{/images/A-images/careersHome.jpg}" alt="Background image" style="width: 100%; height: 400px; object-fit: cover;">
 <div class="content-careers">
-	<h1 class="title-careers">Build Your Dream Career wiht Us</h1>
-	<h2 class="subtitle-careers">Creative, innovative, and excellent future with our team that supports you.</h2>
-	<button class="button-careers">Apply Now</button>
+	<h1 class="title-careers">Build Your Dream Career with us</h1>
+	<h2 class="subtitle-careers">Creative, Innovative, and Excellent Future with our team that supports you.</h2>
+	<button class="button-careers" id="applyButton">Apply Now</button>
 </div>
 </div>
+<center>
+<div id="popupApply" style="display: none;">
+    <div id="noOpenings">No openings as of now</div>
+    <a th:href="@{/Hr/Internship}" class="button" id="exploreInternships">Explore Internships</a>
+</div>
+</center>
 
 <br>
 <br>
@@ -916,11 +1003,14 @@ footer {
  <div class="body-careers2">
 <div class="container-careers">
         <div class="left-half">
-            <img th:src="@{/images/A-images/careersImagesplitleft.jpg}" alt="Placeholder Image">
+            <img th:src="@{/images/A-images/careersImagesplitleft.jpg}" alt="Placeholder Image" style="border-radius: 8px; box-shadow: 0 0 6px ;width: 700px; left: 0px;">
         </div>
         <div class="right-half">
+			<br>
+			<br>
+			<br>
             <h2>Welcome to Abhishyandh</h2>
-            <p>Abhishyandh, a leading organization dedicated to [Locus of Perfection], offers a dynamic and rewarding career path for individuals passionate about making a difference. Join our community of innovators, and be a part of shaping a better future</p>
+            <p style="font-family: 'Times New Roman', Times, serif;">Abhishyandh, a leading organization dedicated to Locus of Perfection, offers a dynamic and rewarding career path for individuals passionate about making a difference. Join our community of innovators, and be a part of shaping a better future</p>
              <a th:href="@{/Website}"><button class="button">Contact Us</button></a>
         </div>
     </div>
@@ -931,180 +1021,189 @@ footer {
 
 <div class="body-careers3">
     <div>
-        <h2 class="h1-careers">Our Channels</h2>
-        <p class="p-careers">Be the first to experience innovation. Follow us on social media for exclusive updates of Abhishyandh  and events.</p>
+        <h2 class="h1-careers" style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">Our Channels</h2>
+        <p class="p-careers" style="font-family: 'Times New Roman', Times, serif;">Be the first to experience innovation. Follow us on social media for exclusive updates of Abhishyandh  and events.</p>
+        
     </div>
     <div class="social-icons-careers">
-        <div>in</div>
+         
          <div>
+			 <a th:href="@{https://www.linkedin.com/company/abhishyandh-global-solutions/}">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-linkedin" viewBox="0 0 16 16">
             <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
           </svg>
+          </a>
           </div>
         <div>
+			<a th:href="@{https://www.instagram.com/abhishyandh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==}">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="maroon" class="bi bi-instagram" viewBox="0 0 16 16">
             <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
           </svg>
+          </a>
           </div>
         <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-youtube" viewBox="0 0 16 16">
-            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
-          </svg>
+          <a th:href="@{https://github.com/AbhiFlash-Coder}"><i class="bi bi-github text-dark-mx-1"></i></a>
         </div>
         <div>
+			<a th:href="@{https://www.facebook.com/share/BxpiEC8qP9PP6ycj/?mibextid=qi2Omg}">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-facebook" viewBox="0 0 16 16">
             <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
           </svg>
+          </a>
         </div>
     </div>
     </div>
 
 <!----footer-->
-  <div class="Heading-Abhishyandh">
-        <h2>Abhishayndh Global Solutions Pvt Ltd</h2>
-    </div>
-    <div class="body-footer">
-    <main>
-         
-    </main>
-    <footer>
-        <div class="footer-wrapper">
-            <div class="footer-columns">
-                <div class="footer-logo-column">
-                     
-                     
-                     
+   <section> 
+        <div class="dummy_page" id="footer">
+            <h3 style="color: white;">Abhishyandh Global Solutions Pvt Ltd</h3>
+        </div>
+        <div class="footer">
+            <img th:src="@{/images/A-images/logo.jpg}" style="width: 100px; height: 100px;">
+            <div class="contain">
+                <div class="col">
+                    <h1 style="color: black;">Our Company</h1>
+                    <ul class="abhishyandh-f">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>IT Services</li>
+                        <li>Hr Services</li>
+                        <li>BPO Services</li>
+                        <li><a th:href="@{/Website}"><li>Get In Touch</li></a></li>
+                    </ul>
                 </div>
-                <div class="link-columns">
-                    <div>
-                        <section>
-                            <h3>Our Company</h3>
-                            <ul>
-                               <li><a href="#" title="Features" th:href="@{/}">Home</a></li>
-                                    <li><a href="#" title="Auth" th:href="@{/AboutAbhishyandh}">About</a></li>
-                                    <li><a href="#" title="Functions" th:href="@{/ITSERVICES}">Services</a></li>
-                                    <li><a href="#" title="Realtime" th:href="@{/ITSERVICES}">Capabilities</a></li>
-                                    <li><a href="#" title="Storage" th:href="@{/trainings}">Trainings</a></li>
-                                    <li><a href="#" title="Vector" th:href="@{/Careers}">Careers</a></li>
-                                    <li><a href="#" title="Pricing" th:href="@{/contact}">Contact Us</a></li>
-                            </ul>
-                        </section>
-
-                        <section>
-                            <h3>Resources</h3>
-                            <ul>
-                                 <li><a href="#" title="Support" th:href="@{/web-projects}">Web Projects</a></li>
-                                    <li><a href="#" title="Sitemap" th:href="@{/java-projects}">Java Projects</a></li>
-                                    <li><a href="#" title="Newsletter" th:href="@{/python-projects}">Python Projects</a></li>
-                                    <li><a href="#" title="Help Centre" th:href="@{/support-projects}">Support Projects</a></li>
-                                    <li><a href="#" title="Investor" th:href="@{/it-trainings}">IT Trainings</a></li>
-                                    <li><a href="#" title="Investor" th:href="@{/hr-services}">HR Services</a></li>
-                                    <li><a href="#" title="Investor" th:href="@{/bpo-services}">BPO Services</a></li>
-                            </ul>
-                        </section>
-                    </div>
-                    <div>
-                        <section>
-                            <h3>Technologies</h3>
-                            <ul>
-                                <li><a href="#" title="Documentation" th:href="@{/java-developers}">Java Developers</a></li>
-                                    <li><a href="#" title="Changelog" th:href="@{/react-js-developers}">React Js Developers</a></li>
-                                    <li><a href="#" title="Contributing" th:href="@{/web-developers}">Web Developers</a></li>
-                                    <li><a href="#" title="OpenSource" th:href="@{/mobile-app-developers}">Mobile Application Developers</a></li>
-                                    <li><a href="#" title="SupaSquad" th:href="@{/full-stack-java-developers}">Full Stack Java Developers</a></li>
-                                    <li><a href="#" title="DevTo" th:href="@{/mern-stack-developers}">Mern Stack Developers</a></li>
-                                    <li><a href="#" title="RSS" th:href="@{/full-stack-python-developers}">Full Stack Python Developers</a></li>
-                            </ul>
-                        </section>
-                        <section>
-                            <h3>Reach us</h3>
-                            <ul>
-                               <li><a href="#" title="Terms and services">+91 8897830910</a></li>
-                                    <li><a href="#" title="Privacy Policy">040-6685-8189</a></li>
-                                    <li><a href="mailto:info@abhishyandh.co.in" title="Careers">info@abhishyandh.co.in</a></li>
-                                    <li><a href="mailto:hr@abhishyandh.co.in" title="Company">hr@abhishyandh.co.in</a></li>
-                                    <li><a href="https://abhishyandh.co.in" title="Terms Of Service">https://abhishyandh.co.in</a></li>
-                                    <li><a href="#contact-form-page" title="Privacy Policy">Get in Touch</a></li>
-                            </ul>
-                        </section>
-                    </div>
+                <div class="col">
+                     
+                    <h1 style="color: black;">We Develop</h1>
+                    <ul>
+                        <li>Web Development</li>
+                        <li>Java Development</li>
+                        <li>Python Development</li>
+                        <li>Mobile Development</li>
+ 						<li><a th:href="@{/Website}"><li>Get In Touch</li></a></li>
+                        
+                    </ul>
                 </div>
+                <div class="col">
+                     
+                    <h1 style="color: black;">Contact ABS</h1>
+                    <ul>
+                        <li>+91 8897830910</li>
+                        <li>040-6685-8189</li>
+                        <li>info@abhishyandh.co.in</li>
+                        <li>https://abhishyandh.co.in</li>
+                        <li><a th:href="@{/Website}"><li>Get In Touch</li></a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                     
+                    <h1 style="color: black;">Support</h1>
+                    <ul>
+                        <li>Web Mails</li>
+                        <li>hr@abhishyandh.co.in</li>
+                        <li>info@abhishyandh.co.in</li>
+                       <li><a th:href="@{/Website}"><li>Get In Touch</li></a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    
+                    <h1 style="color: black;">Resources</h1>
+                    <ul>
+                        <li>LinkedIn</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                        <li>FaceBook</li>
+                        <li><a th:href="@{/Website}"><li>Get In Touch</li></a></li>
+                    </ul>
+                </div>
+                     <div class="col">
+                        
+                    <h1 style="color: black;">Follow Us On</h1>
+                    <ul>
+                        <p class="social-media">
+                            <a th:href="@{https://www.linkedin.com/company/abhishyandh-global-solutions/}"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a th:href="@{https://github.com/AbhiFlash-Coder}"><i class="bi bi-github text-dark-mx-1"></i></a>
+                            
+                            <a th:href="@{https://www.facebook.com/share/BxpiEC8qP9PP6ycj/?mibextid=qi2Omg}"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a th:href="@{https://www.instagram.com/abhishyandh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==}"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                             
+                          
+                        </p>  
+                    </ul>
+                <div class="clearfix">
+                     
+            </div>
+             
+        </div>
             </div>
         </div>
-         <div class="h1-follow">
-            <center><h1>Follow Us</h1></center>
-         </div>
-        <div class="social-wrapper">
-                         
-            <div class='social-links'>
-                <ul>
-                    <li>
-                        <a href="#" title="Twitter">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="icon icon-tabler icon-tabler-brand-x" width="24" height="24"
-                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
-                                <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="GitHub">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="icon icon-tabler icon-tabler-brand-github" width="24" height="24"
-                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path
-                                    d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Discord">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="icon icon-tabler icon-tabler-brand-discord" width="24" height="24"
-                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
-                                <path d="M14 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
-                                <path
-                                    d="M15.5 17c0 1 1.5 3 2 3c1.5 0 2.833 -1.667 3.5 -3c.667 -1.667 .5 -5.833 -1.5 -11.5c-1.457 -1.015 -3 -1.34 -4.5 -1.5l-.972 1.923a11.913 11.913 0 0 0 -4.053 0l-.975 -1.923c-1.5 .16 -3.043 .485 -4.5 1.5c-2 5.667 -2.167 9.833 -1.5 11.5c.667 1.333 2 3 3.5 3c.5 0 2 -2 2 -3" />
-                                <path d="M7 16.5c3.5 1 6.5 1 10 0" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Youtube">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="icon icon-tabler icon-tabler-brand-youtube" width="24" height="24"
-                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path
-                                    d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" />
-                                <path d="M10 9l5 3l-5 3z" />
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- bottom part section -->
-        <div class="footer-bottom">
-            <div class="footer-bottom-wrapper">
-                <small>© <span id="year"></span> Abhishayndh Global Solutions.</small>
-            </div>
-        </div>
-    </footer>
-    </div>
+    </section>
     
-    <script>
-		 document.getElementById("year").innerHTML = new Date().getFullYear();
-	</script>
+ <!--whatsapp integration-->
+ <!-- WhatsApp Icon -->
+<div class="whatsapp-icon" id="whatsapp-icon">
+    <i class="fab fa-whatsapp"></i>
+</div>
+
+<!-- Popup -->
+<div class="popup" id="whatsapp-popup">
+    <div class="popup-header" style="color: orange;">Contact Abhishyandh</div>
+    <div class="popup-body">
+        <p style="color: green;">Feel free to send us a message below or chat directly with us on WhatsApp:</p>
+        <textarea id="message-input" placeholder="Type your message here..." style="resize: none;"></textarea>
+    </div>
+    <div class="popup-footer">
+        <button class="send-button" id="send-message-button">Send Message</button> &nbsp;&nbsp;&nbsp;
+        <button class="chat-button" id="chat-with-abhi-button">Chat with Abhishyandh</button>
+    </div>
+</div>
+
+ 
+
+<script>
+    const whatsappIcon = document.getElementById('whatsapp-icon');
+    const popupp = document.getElementById('whatsapp-popup');
+    const sendMessageButton = document.getElementById('send-message-button');
+    const chatWithAbhiButton = document.getElementById('chat-with-abhi-button');
+    const messageInput = document.getElementById('message-input');
+    
+    // Toggle popup visibility
+    whatsappIcon.addEventListener('click', (event) => {
+        popup.style.display = popupp.style.display === 'block' ? 'none' : 'block';
+        event.stopPropagation();  
+    });
+
+    // Send message button click
+    sendMessageButton.addEventListener('click', () => {
+        const message = encodeURIComponent(messageInput.value.trim());
+        if (message) {
+            const url = `https://wa.me/8897830910?text=${message}`;
+            window.open(url, '_blank');
+            messageInput.value = '';  
+        } else {
+            alert('Please enter a message.');
+        }
+    });
+
+    // Chat with Abhishyandh button click
+    chatWithAbhiButton.addEventListener('click', () => {
+        const prefilledMessage = encodeURIComponent('May I know more about this?');
+        const url = `https://wa.me/8897830910?text=${prefilledMessage}`;
+        window.open(url, '_blank');
+    });
+
+    // Close popup when clicking outside
+    document.addEventListener('click', (event) => {
+        if (!popup.contains(event.target) && !whatsappIcon.contains(event.target)) {
+            popup.style.display = 'none';
+        }
+    });
+</script>
+    
+     
 <script>
 	//navbar fixed and modify
 
@@ -1195,6 +1294,24 @@ document.addEventListener('scroll', function() {
         textContainer.style.opacity = '1';
         imageContainer.style.transform = 'translateX(0)';
         imageContainer.style.opacity = '1';
+    }
+});
+
+
+//apply
+const applyButton = document.getElementById('applyButton');
+const popupApply = document.getElementById('popupApply');
+const exploreInternships = document.getElementById('exploreInternships');
+
+// Show popup when apply button is clicked
+applyButton.addEventListener('click', () => {
+    popupApply.style.display = 'block';
+});
+
+// Hide popup when clicking outside of it
+window.addEventListener('click', (e) => {
+    if (e.target !== popupApply && !popupApply.contains(e.target) && e.target !== applyButton) {
+        popupApply.style.display = 'none';
     }
 });
 

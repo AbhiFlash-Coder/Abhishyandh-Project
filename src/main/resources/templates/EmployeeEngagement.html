@@ -10,272 +10,248 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <style>
-		 html {
+		 html,body {
   scroll-behavior: smooth;
+   max-width: 100%;
+    overflow-x: hidden;
 }
 
-body {
-font-family: "Red Hat Display", sans-serif;
-font-size: 16px;
-cursor: pointer;
-}
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-		
-		.btn-navbar{
-    background-color: maroon;
-    color: white;
-    font-weight: bold;
-   border-radius: 4px;
-   border: 1px solid white;
-   height: 35px;
-   width: 100px;
-    font-size: 0.8rem; 
-}
-.btn-navbar:hover{
-    background-color: #122f47;
-}
-		:root {
-                --primary: #0969DA;
-                --background: white;
-                --gray: #847F90;
-                --white: black;
-                --navbar-height: 3.75rem;
+:root {
+               --primary: #0969DA;
+               --background: white;
+               --gray: #847F90;
+               --white: black;
+               --navbar-height: 3.75rem;
+           }
+
+           body {
+               font-family: "Red Hat Display", sans-serif;
+               font-size: 16px;
+               cursor: pointer;
                 
-            }
-            .menu__wrapper-abhishyandh-N {
-                display: flex;
-                 position: fixed; 
-                flex-direction: row;
-                justify-content: flex-end; 
-                width: 100vw;
-                z-index: 2;
-                gap: 2rem;
-                background: var(--background);
-                height: var(--navbar-height);
-                padding: 0 2rem;
-                align-items: center;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-                transition: box-shadow 0.3s ease; 
-                top: 0; 
-    left: 0;
-    right: 0;
-    background: var(--background);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
-    z-index: 1000; 
-            }
+           }
 
-            .menu__wrapper-abhishyandh-N.scrolled {
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
-            }
+           * {
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+           }
 
-            .menu__bar-abhishyandh-N {
-                display: flex;
-                gap: 1.5rem;
-                align-items: center;
-                margin-right: auto; 
-            }
+           .menu__wrapper-abhishyandh-N {
+               display: flex;
+               position: fixed;
+               flex-direction: row;
+               justify-content: flex-end; 
+               width: 100vw;
+               z-index: 2;
+               gap: 1.5rem;
+               background: var(--background);
+               height: var(--navbar-height);
+               padding: 0 1rem;
+               align-items: center;
+               box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+               transition: box-shadow 0.3s ease; 
+           }
 
-            .logo-abhishyandh-N {
-                
-                cursor: pointer;
-            }
+           .menu__wrapper-abhishyandh-N.scrolled {
+               box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+           }
 
-            .logo-abhishyandh-N svg {
-                fill: var(--white);
-            }
+           .menu__bar-abhishyandh-N {
+               display: flex;
+               gap: 1.5rem;
+               align-items: center;
+               margin-right: auto; 
+           }
 
-            .navigation-abhishyandh-N {
-                display: flex;
-                flex-direction: row;
-                list-style-type: none;
-                align-items: center;
-                gap: 2rem;
-                background: var(--background);
-            }
-             
+           .logo-abhishyandh-N {
+               
+               cursor: pointer;
+           }
 
-            .navigation-abhishyandh-N > li {
-                display: flex;
-                position: relative;
-                cursor: pointer;
-                align-items: center;
-                height: 2.625rem;
-            }
-            .navigation-abhishyandh-N li::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background-color: maroon;
-    transition: width 0.3s ease;  
-}
-.navigation-abhishyandh-N li:hover::after {
-    width: 100%;
-}
+           .logo-abhishyandh-N svg {
+               fill: var(--white);
+           }
 
-            .navigation-abhishyandh-N > li > button > svg {
-                fill: var(--white);
-                color: var(--white);
-                transition: all 0.2s ease-in-out;
-            }
+           .navigation-abhishyandh-N {
+               display: flex;
+               flex-direction: row;
+               list-style-type: none;
+               align-items: center;
+               gap: 0.5rem;
+               background: var(--background);
+           }
 
-            .navigation-abhishyandh-N > li > a {
-                color: var(--white);
-                font-size: 0.875rem;
-                text-decoration: none;
-                transition: all 0.2s ease-in-out;
-            }
+           .navigation-abhishyandh-N > li {
+               display: flex;
+               position: relative;
+               cursor: pointer;
+               align-items: center;
+               height: 2.625rem;
+           }
 
-            .navigation-abhishyandh-N > li > button {
-                color: var(--white);
-                border-bottom: 2px solid transparent;
-                transition: all 0.3s ease;
-                text-decoration: none;
-                border: none;
-                cursor: pointer;
-                font-weight: 500;
-                gap: 0.25rem;
-                opacity: 1;
-                align-items: center;
-                font-size: 0.875rem;
-                flex-wrap: nowrap;
-                white-space: nowrap;
-                background: none;
-                display: flex;
-                padding: 0.185rem 0;
-                position: relative;
-                transition: all 0.2s ease-in-out;
-            }
+           .navigation-abhishyandh-N > li > button > svg {
+               fill: var(--white);
+               color: var(--white);
+               transition: all 0.2s ease-in-out;
+           }
 
-            .dropdown-abhishyandh-N {
-                position: absolute;
-                top: 2.625rem;
-                min-width: 15rem;
-                border-radius: 0.5rem;
-                background: white;
-                display: none;
-                flex-direction: column;
-                padding: 1rem;
-                box-shadow: 0 5px 30px rgba(27, 31, 35, 0.1), 0 0 1px rgba(27, 31, 35, 0.4), 0 1px 2px rgba(27, 31, 35, 0.15);
-                z-index: 2;
-                animation: fadeIn 0.2s ease-in-out;
-            }
+           .navigation-abhishyandh-N > li > a {
+               color: var(--white);
+               font-size: 0.875rem;
+               text-decoration: none;
+               transition: all 0.2s ease-in-out;
+           }
 
-            
+           .navigation-abhishyandh-N > li > button {
+               color: var(--white);
+               border-bottom: 2px solid transparent;
+               transition: all 0.3s ease;
+               text-decoration: none;
+               border: none;
+               cursor: pointer;
+               font-weight: 500;
+               gap: 0.25rem;
+               opacity: 1;
+               align-items: center;
+               font-size: 0.875rem;
+               flex-wrap: nowrap;
+               white-space: nowrap;
+               background: none;
+               display: flex;
+               padding: 0.185rem 0;
+               position: relative;
+               transition: all 0.2s ease-in-out;
+           }
 
-            .dropdown-abhishyandh-N h3 {
-                font-size: 0.875rem;
-                font-weight: 600;
-                margin-bottom: 0.5rem;
-            }
+           .dropdown-abhishyandh-N {
+               position: absolute;
+               top: 2.625rem;
+               min-width: 15rem;
+               border-radius: 0.5rem;
+               background: white;
+               display: none;
+               flex-direction: column;
+               padding: 1rem;
+               box-shadow: 0 5px 30px rgba(27, 31, 35, 0.1), 0 0 1px rgba(27, 31, 35, 0.4), 0 1px 2px rgba(27, 31, 35, 0.15);
+               z-index: 2;
+               animation: fadeIn 0.2s ease-in-out;
+           }
 
-            .list-menu-items-abhishyandh-N {
-                display: flex;
-                list-style-type: none;
-                flex-direction: column;
-                gap: 0.25rem;
-            }
+           @keyframes fadeIn {
+               from {
+                   opacity: 0;
+                   transform: scale(0.99) translateY(-0.7em);
+                   transform-origin: top;
+               }
+               to {
+                   opacity: 1;
+                   transform: scale(1) translateY(0);
+               }
+           }
 
-            .list-menu-items-abhishyandh-N > li > a {
-                display: flex;
-                gap: 1rem;
-                font-size: 0.875rem;
-                width: 100%;
-                color: var(--gray);
-                text-decoration: none;
-            }
+           .dropdown-abhishyandh-N h3 {
+               font-size: 0.875rem;
+               font-weight: 600;
+               margin-bottom: 0.5rem;
+           }
 
-            .list-menu-items-abhishyandh-N > li > a:hover {
-                color: var(--primary);
-            }
+           .list-menu-items-abhishyandh-N {
+               display: flex;
+               list-style-type: none;
+               flex-direction: column;
+               gap: 0.25rem;
+           }
 
-            .list-items-with-description-abhishyandh-N {
-                list-style-type: none;
-            }
+           .list-menu-items-abhishyandh-N > li > a {
+               display: flex;
+               gap: 1rem;
+               font-size: 0.875rem;
+               width: 100%;
+               color: var(--gray);
+               text-decoration: none;
+           }
 
-            .list-items-with-description-abhishyandh-N li {
-                display: flex;
-                padding: 0.25rem;
-                gap: 1rem;
-                width: 100%;
-            }
+           .list-menu-items-abhishyandh-N > li > a:hover {
+               color: var(--primary);
+           }
 
-            .list-items-with-description-abhishyandh-N li:hover {
-                color: var(--primary);
-            }
+           .list-items-with-description-abhishyandh-N {
+               list-style-type: none;
+           }
 
-            .list-items-with-description-abhishyandh-N li svg {
-                width: 1rem;
-                height: 1rem;
-                stroke: var(--primary);
-            }
+           .list-items-with-description-abhishyandh-N li {
+               display: flex;
+               padding: 0.25rem;
+               gap: 1rem;
+               width: 100%;
+           }
 
-            .item-title-abhishyandh-N h3 {
-                font-size: 0.875rem;
-                font-weight: 600;
-            }
+           .list-items-with-description-abhishyandh-N li:hover {
+               color: var(--primary);
+           }
 
-            .item-title-abhishyandh-N p {
-                font-size: 0.75rem;
-            }
+           .list-items-with-description-abhishyandh-N li svg {
+               width: 1rem;
+               height: 1rem;
+               stroke: var(--primary);
+           }
 
-            .navigation-abhishyandh-N > li:hover .dropdown-abhishyandh-N {
-                display: flex;
-                opacity: 1;
-            }
+           .item-title-abhishyandh-N h3 {
+               font-size: 0.875rem;
+               font-weight: 600;
+           }
 
-            .action-buttons-abhishyandh-N {
-                display: flex;
-                gap: 0.5rem;
-                align-items: center;
-                flex-wrap: nowrap;
-            }
+           .item-title-abhishyandh-N p {
+               font-size: 0.75rem;
+           }
 
-            .action-buttons-abhishyandh-N a {
-                white-space: nowrap;
-                padding: 0.25rem 0.5rem;
-                transition: all 0.2s ease-in-out;
-            }
+           .navigation-abhishyandh-N > li:hover .dropdown-abhishyandh-N {
+               display: flex;
+               opacity: 1;
+           }
 
-            .action-buttons-abhishyandh-N a:hover {
-                opacity: .75;
-            }
+           .action-buttons-abhishyandh-N {
+               display: flex;
+               gap: 0.5rem;
+               align-items: center;
+               flex-wrap: nowrap;
+           }
 
-            .secondary-abhishyandh-N {
-                background: none;
-                color: var(--white);
-                outline: none;
-                border: none;
-            }
+           .action-buttons-abhishyandh-N a {
+               white-space: nowrap;
+               padding: 0.25rem 0.5rem;
+               transition: all 0.2s ease-in-out;
+           }
 
-            .primary-abhishyandh-N {
-                color: var(--white);
-                border-radius: 0.5rem;
-                border: 1px solid var(--white);
-            }
+           .action-buttons-abhishyandh-N a:hover {
+               opacity: .75;
+           }
 
-            .burger-menu-abhishyandh-N {
-                display: none;
-                outline: none;
-                border: none;
-                cursor: pointer;
-                background: transparent;
-            }
+           .secondary-abhishyandh-N {
+               background: none;
+               color: var(--white);
+               outline: none;
+               border: none;
+           }
 
-            .burger-menu-abhishyandh-N svg {
-                stroke: var(--white);
-            }
-        
-            /*hambueger*/
-              @media screen and (max-width: 768px) {
-      .navigation-abhishyandh-N {
+           .primary-abhishyandh-N {
+               color: var(--white);
+               border-radius: 0.5rem;
+               border: 1px solid var(--white);
+           }
+
+           .burger-menu-abhishyandh-N {
+               display: none;
+               outline: none;
+               border: none;
+               cursor: pointer;
+               background: transparent;
+           }
+
+           /*hambueger*/
+           @media screen and (max-width: 768px) {
+    .navigation-abhishyandh-N {
         display: none;
         position: absolute;
         top: var(--navbar-height);
@@ -322,8 +298,133 @@ box-sizing: border-box;
     }
 }
 
+            
+/*footer*/
+.dummy_page {
+   height:100px;
+   width: 100%;
+   background-color: #74C69D;
+   text-align: center;
+   box-sizing: border-box;
+   padding: 60px 0px;
+    
+}
+.footer {
+   width: 100%;
+   position: relative;
+   height: auto;
+   background-color: white;
+   overflow: hidden;
+}
+.footer .col {
+   width: 190px;
+   height: auto;
+   float: left;
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   padding: 0px 20px 20px 20px;
+    
+}
+.footer .col h1 {
+   margin: 0;
+   padding: 0;
+   font-family: inherit;
+   font-size: 12px;
+   line-height: 17px;
+   padding: 20px 0px 5px 0px;
+   color: rgba(255,255,255,0.2);
+   font-weight: normal;
+   text-transform: uppercase;
+   letter-spacing: 0.250em;
+}
+.footer .col ul li {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+.footer .col ul li {
+   color: #999999;
+   font-size: 14px;
+   font-family: inherit;
+   font-weight: bold;
+   padding: 5px 0px 5px 0px;
+   cursor:pointer;
+   transition: .2s;
+   -webkit-transition: .2s;
+   -moz-transition: .2s;
+}
+.social ul li {
+   display: inline-block;
+   padding-right: 5px !important;
+}
+.footer .col ul li:hover {
+   color: black;
+   transition: .1s;
+   -webkit-transition: .1s;
+   -moz-transition: .1s;
+}
+.clearfix {
+   clear: both;
+}
+@media only screen and (min-width:768px) {
+   .contain {
+       width: 1200px;
+       margin: 0 auto;
+   }
+}
+@media only screen and (max-width:768px) {
+.contain .social {
+width: 1000px;
+display: block;
+}
+.social h1{
+   margin: 0px;
+}
+}
+@media only screen and (max-width:768px) {
+   .footer .col {
+width: 33%;
+   }
+   .footer .col h1 {
+       font-size: 14px;
+   }
+   .footer .col ul li{
+       font-size: 13px;
+   }
+}
+@media only screen and (max-width:500px) {
+   .footer .col {
+       width: 50%;
+   }
+   .footer .col h1{
+       font-size: 14px;
+   }
+   .footer .col ul li {
+       font-size: 13px;
+   }
+}
+@media only screen and (max-width:340px) {
+   .footer .col{
+       width: 100%;
+   }
+}
+.social-media {
+   cursor: pointer;
+}
 
-/*starts here*/
+/*copy right*/
+.copyright-abhishyandh{
+   background-color: #050510;
+   color: #999999;
+   text-align: center;
+   padding: 10px 0;
+   width: 100%;
+   font-size: 14px;
+}  
+.copyright p {
+   margin: 0;
+}
 /*employee engage*/
 .backbone-engage{
     font-family: Arial, sans-serif;
@@ -441,136 +542,88 @@ height: 400px;
             height: 200px;
             }
         }
-          
-  
- 
-/*footer*/
-.dummy_page {
-   height:100px;
-   width: 100%;
-   background-color: #74C69D;
-   text-align: center;
-   box-sizing: border-box;
-   padding: 60px 0px;
-    
-}
-.footer {
-   width: 100%;
-   position: relative;
-   height: auto;
-   background-color: white;
-   overflow: hidden;
-}
-.footer .col {
-   width: 190px;
-   height: auto;
-   float: left;
-   box-sizing: border-box;
-   -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-   padding: 0px 20px 20px 20px;
-    
-}
-.footer .col h1 {
-   margin: 0;
-   padding: 0;
-   font-family: inherit;
-   font-size: 12px;
-   line-height: 17px;
-   padding: 20px 0px 5px 0px;
-   color: rgba(255,255,255,0.2);
-   font-weight: normal;
-   text-transform: uppercase;
-   letter-spacing: 0.250em;
-}
-.footer .col ul li {
-list-style-type: none;
-margin: 0;
-padding: 0;
-}
-.footer .col ul li {
-   color: #999999;
-   font-size: 14px;
-   font-family: inherit;
-   font-weight: bold;
-   padding: 5px 0px 5px 0px;
-   cursor:pointer;
-   transition: .2s;
-   -webkit-transition: .2s;
-   -moz-transition: .2s;
-}
-.social ul li {
-   display: inline-block;
-   padding-right: 5px !important;
-}
-.footer .col ul li:hover {
-   color: black;
-   transition: .1s;
-   -webkit-transition: .1s;
-   -moz-transition: .1s;
-}
-.clearfix {
-   clear: both;
-}
-@media only screen and (min-width:1280px) {
-   .contain {
-       width: 1200px;
-       margin: 0 auto;
-   }
-}
-@media only screen and (max-width:1139px) {
-.contain .social {
-width: 1000px;
-display: block;
-}
-.social h1{
-   margin: 0px;
-}
-}
-@media only screen and (max-width:950px) {
-   .footer .col {
-width: 33%;
-   }
-   .footer .col h1 {
-       font-size: 14px;
-   }
-   .footer .col ul li{
-       font-size: 13px;
-   }
-}
-@media only screen and (max-width:500px) {
-   .footer .col {
-       width: 50%;
-   }
-   .footer .col h1{
-       font-size: 14px;
-   }
-   .footer .col ul li {
-       font-size: 13px;
-   }
-}
-@media only screen and (max-width:340px) {
-   .footer .col{
-       width: 100%;
-   }
-}
-.social-media {
-   cursor: pointer;
-}
+         /*whatsapp integration*/
+.whatsapp-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            z-index: 1000;
+        }
 
-/*copy right*/
-.copyright-abhishyandh{
-   background-color: #050510;
-   color: #999999;
-   text-align: center;
-   padding: 10px 0;
-   width: 100%;
-   font-size: 14px;
-}  
-.copyright p {
-   margin: 0;
-}
+        .whatsapp-icon i {
+            color: white;
+            font-size: 30px;
+        }
 
+        /* Popup container */
+        .popup {
+            display: none;
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            padding: 20px;
+        }
+
+        .popup-header {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .popup-body {
+            margin-bottom: 20px;
+        }
+
+        .popup-body textarea {
+            width: 100%;
+            height: 80px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            font-size: 14px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .popup-footer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .popup-footer button {
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .send-button {
+            background-color: #25D366;
+        }
+
+        .chat-button {
+            background-color: #007BFF;
+        }
+
+        .whatsapp-icon:hover, .send-button:hover, .chat-button:hover {
+            opacity: 0.8;
+        }
 </style>
 </head>
 <body>
@@ -578,11 +631,12 @@ width: 33%;
     <nav class="menu__wrapper-abhishyandh-N">
         <div class="menu__bar-abhishyandh-N">
             <a
-                href="#"
+                th:href="@{/Website}"
                 title="Logo-abhishyandh-N"
                 class="logo-abhishyandh-N">
                 <img th:src="@{/images/A-images/logo.jpg}" style="width: 100px; height: 60px;">
             </a>
+            
             <ul class="navigation-abhishyandh-N hide-abhishyandh-N">
                   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                  
@@ -597,13 +651,14 @@ width: 33%;
                             <path d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"></path>
                         </svg>
                     </button>
+                    
                     <div class="dropdown-abhishyandh-N">
                         <ul class="list-items-with-description-abhishyandh-N" style="color: white;">
                             <li>
                                 <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-workflow color-fg-subtle mr-3">
                                     <path d="M1 3a2 2 0 0 1 2-2h6.5a2 2 0 0 1 2 2v6.5a2 2 0 0 1-2 2H7v4.063C7 16.355 7.644 17 8.438 17H12.5v-2.5a2 2 0 0 1 2-2H21a2 2 0 0 1 2 2V21a2 2 0 0 1-2 2h-6.5a2 2 0 0 1-2-2v-2.5H8.437A2.939 2.939 0 0 1 5.5 15.562V11.5H3a2 2 0 0 1-2-2Zm2-.5a.5.5 0 0 0-.5.5v6.5a.5.5 0 0 0 .5.5h6.5a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5ZM14.5 14a.5.5 0 0 0-.5.5V21a.5.5 0 0 0 .5.5H21a.5.5 0 0 0 .5-.5v-6.5a.5.5 0 0 0-.5-.5Z"></path>
                                 </svg>
-                                <a th:href="@{/ITSERVICES}">
+                                <a th:href="@{/ITSERVICES}" style="text-decoration: none;">
                                     <div class="item-title-abhishyandh-N">
                                         <h3 style="color: black;">IT SERVICES</h3>
                                         <p style="color: blue;text-decoration: none;">We Design and Develop your Dream Website</p>
@@ -614,7 +669,7 @@ width: 33%;
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
                                     <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"/>
                                   </svg>
-                                <a th:href="@{/ITTRAININGS}">
+                                <a th:href="@{/ITTRAININGS}" style="text-decoration: none;">
                                     <div class="item-title-abhishyandh-N">
                                         <h3 style="color: black;">IT TRAININGS</h3>
                                         <p style="color: blue; text-decoration: none;">We Train you and shape your IT Future</p>
@@ -625,7 +680,7 @@ width: 33%;
                                 <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-package color-fg-subtle mr-3">
                                     <path d="M12.876.64V.639l8.25 4.763c.541.313.875.89.875 1.515v9.525a1.75 1.75 0 0 1-.875 1.516l-8.25 4.762a1.748 1.748 0 0 1-1.75 0l-8.25-4.763a1.75 1.75 0 0 1-.875-1.515V6.917c0-.625.334-1.202.875-1.515L11.126.64a1.748 1.748 0 0 1 1.75 0Zm-1 1.298L4.251 6.34l7.75 4.474 7.75-4.474-7.625-4.402a.248.248 0 0 0-.25 0Zm.875 19.123 7.625-4.402a.25.25 0 0 0 .125-.216V7.639l-7.75 4.474ZM3.501 7.64v8.803c0 .09.048.172.125.216l7.625 4.402v-8.947Z"></path>
                                 </svg>
-                                 <a th:href="@{/HRSERVICES}">
+                                 <a th:href="@{/HRSERVICES}" style="text-decoration: none;">
                                     <div class="item-title-abhishyandh-N" style="color: black;">
                                     <h3 style="color: black;">HR SERVICES</h3>
                                        <p style="color: blue;text-decoration: none;">Empowering Your Business with Exceptional HR Solutions</p>
@@ -637,7 +692,7 @@ width: 33%;
                                 <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-shield-check color-fg-subtle mr-3">
                                     <path d="M16.53 9.78a.75.75 0 0 0-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 0 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5-5Z"></path><path d="m12.54.637 8.25 2.675A1.75 1.75 0 0 1 22 4.976V10c0 6.19-3.771 10.704-9.401 12.83a1.704 1.704 0 0 1-1.198 0C5.77 20.705 2 16.19 2 10V4.976c0-.758.489-1.43 1.21-1.664L11.46.637a1.748 1.748 0 0 1 1.08 0Zm-.617 1.426-8.25 2.676a.249.249 0 0 0-.173.237V10c0 5.46 3.28 9.483 8.43 11.426a.199.199 0 0 0 .14 0C17.22 19.483 20.5 15.461 20.5 10V4.976a.25.25 0 0 0-.173-.237l-8.25-2.676a.253.253 0 0 0-.154 0Z"></path>
                                 </svg>
-                                <a th:href="@{/BPOSERVICES}">
+                                <a th:href="@{/BPOSERVICES}" style="text-decoration: none;">
                                     <div class="item-title-abhishyandh-N" style="color: black;">
                                         <h3 style="color: black;">BPO SERVICES</h3>
                                         <p style="color: blue; text-decoration: none">BPO: Empowering businesses to excel by focusing on what we can do best.</p>
@@ -680,6 +735,9 @@ width: 33%;
             <li><a th:href="@{/DotNetCourse}" class="courses">Dot Net Full Stack Development</a></li>
             <li><a th:href="@{/PowerBi}" class="courses">Power BI</a></li>
             <li><a th:href="@{/ArtificialIntelligenceMl}" class="courses">AI/ML</a></li>
+            <li><a th:href="@{/Angular}" class="courses">Angular</a></li>
+            <li><a th:href="@{/React}" class="courses">React</a></li>
+            <li><a th:href="@{/ionic}" class="courses">Ionic</a></li>
         </ul>
         <h3 style="color: maroon;">MANAGEMENT</h3>
         <ul class="list-menu-items-abhishyandh-N">
@@ -695,7 +753,7 @@ width: 33%;
     <a th:href="@{/Careers}" style="font-family: 'Times New Roman', Times, serif; font-size: 1.1rem; font-weight: bold; color: #173F5F;">Careers</a>
 </li>
 <li>
-    <a th:href="@{/Website}" style="font-family: 'Times New Roman', Times, serif; font-size: 1.1rem; font-weight: bold; color: #173F5F;">Contact Us</a>
+    <a th:href="@{/Website}" class="contact-link" style="font-family: 'Times New Roman', Times, serif; font-size: 1.1rem; font-weight: bold; color: #173F5F;">Contact Us</a>
 </li>
 <li>
     <a th:href="@{/register}"><button class="btn-navbar">Get Started</button></a>
@@ -713,11 +771,10 @@ width: 33%;
     </nav>
 </div>
 
-
 <!--Starts here-->
  <div class="padding" style="padding: 50px;">
         <div class="image">
-            <img th:src="@{/images/A-images/empengagee.jpg}" alt="Employee Engagement Image">
+            <img th:src="@{/images/A-images/empengagee.jpg}" alt="Employee Engagement Image" style="width: 100%; height: 500px; @media only screen and(max-width:768px){width: 768px; height: 200px;}">
         </div>
         <div class="padding" style="padding: 30px;">
             <div class="team3">
@@ -727,8 +784,8 @@ width: 33%;
                     </center>
                     <center>
                         <h5 style="font-family: 'Times New Roman', Times, serif;">
-                            Looking for team building activities or employee engagement activities in Hyderabad? Whether you're planning an outdoor retreat at a resort or an in-house event, there are plenty of options to choose from. From physical outdoor challenges to problem-solving exercises, team building and employee engagement activities can help improve communication, build trust, and boost morale among your employees.
-                            Outlifes Team building and employee engagement activities at Hyderabad offer a plethora of opportunities for companies to boost their team's engagement, morale, and collaboration. With various exciting indoor and outdoor activities available, team building events in Hyderabad provide a perfect opportunity for employees to step out of their office comfort zones and engage in fun and challenging team activities.
+                            Looking for team building activities or employee engagement activities in Hyderabad? Whether you're planning an outdoor retreat at a resort or an in-house event, there are plenty of options to choose from. From physical outdoor challenges to problem-solving exercises, team building and employee engagement activities can help improve communication, build trust, and boost energy among your employees.
+                            Outlifes Team building and employee engagement activities at Hyderabad offer a plenty of opportunities for companies to boost their team's engagement, morale, and collaboration. With various exciting indoor and outdoor activities available, team building events in Hyderabad provide a perfect opportunity for employees to step out of their office comfort zones and engage in fun and challenging team activities.
                         </h5>
                     </center>
                 </div>
@@ -748,7 +805,7 @@ width: 33%;
                 <div class="team" style="text-align: center;">
                     <h2 style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">Team Building | Employee Engagement Activities | Pan India</h2>
                     <h5 style="font-family: 'Times New Roman', Times, serif;">
-                        Our Professional facilitators can help team members develop new skills, improve relationships, and work together more effectively. From outdoor activities like rock climbing and trekking to indoor activities like workshops and games, there is something for everyone to enjoy.
+                        Our Professional facilitators can help team members develop new skills, improve relationships, and work together more effectively. From outdoor activities like rock climbing and trecking to indoor activities like workshops and games, there is something for everyone to enjoy.
                     </h5>
                     <h5 style="font-family: 'Times New Roman', Times, serif;">
                         When teams engage in outdoor activities, they often find themselves in unfamiliar and unpredictable situations, which requires them to rely on each other's strengths and support one another through the process. This helps in breaking down barriers, building trust, and encouraging open communication.
@@ -786,7 +843,7 @@ width: 33%;
                         <li>Yoga or meditation classes</li>
                         <li>Fitness challenges</li>
                         <li>Mental health awareness programs</li>
-                        <li>Ergonomic workspace assessments</li>
+                        <li>Gym workspace Activities</li>
                     </ul>
                 </div>
                 <div class="activity-card">
@@ -849,7 +906,7 @@ width: 33%;
 <!-- Footer Section -->
      <div class="padding" style="padding: 30px;"></div>
 
-    <section> 
+     <section> 
         <div class="dummy_page" id="footer">
             <h3 style="color: white;">Abhishyandh Global Solutions Pvt Ltd</h3>
         </div>
@@ -865,7 +922,7 @@ width: 33%;
                         <li>IT Services</li>
                         <li>Hr Services</li>
                         <li>BPO Services</li>
-                        <a href="Contact-Abhishyandh.html"><li>Get In Touch</li></a>
+                        <li><a th:href="@{/Website}"><li>Get In Touch</li></a></li>
                     </ul>
                 </div>
                 <div class="col">
@@ -876,7 +933,7 @@ width: 33%;
                         <li>Java Development</li>
                         <li>Python Development</li>
                         <li>Mobile Development</li>
-                        <a href="Contact-Abhishyandh.html"><li>Get In Touch</li></a>
+ 						<li><a th:href="@{/Website}"><li>Get In Touch</li></a></li>
                         
                     </ul>
                 </div>
@@ -888,7 +945,7 @@ width: 33%;
                         <li>040-6685-8189</li>
                         <li>info@abhishyandh.co.in</li>
                         <li>https://abhishyandh.co.in</li>
-                        <a href="Contact-Abhishyandh.html"><li>Get In Touch</li></a>
+                        <li><a th:href="@{/Website}"><li>Get In Touch</li></a></li>
                     </ul>
                 </div>
                 <div class="col">
@@ -898,7 +955,7 @@ width: 33%;
                         <li>Web Mails</li>
                         <li>hr@abhishyandh.co.in</li>
                         <li>info@abhishyandh.co.in</li>
-                        <a href="Contact-Abhishyandh.html"><li>Get In Touch</li></a>
+                       <li><a th:href="@{/Website}"><li>Get In Touch</li></a></li>
                     </ul>
                 </div>
                 <div class="col">
@@ -910,7 +967,7 @@ width: 33%;
                         <li>Instagram</li>
                         <li>Youtube</li>
                         <li>FaceBook</li>
-                        <a href="Contact-Abhishyandh.html"><li>Get In Touch</li></a>
+                        <li><a th:href="@{/Website}"><li>Get In Touch</li></a></li>
                     </ul>
                 </div>
                      <div class="col">
@@ -918,12 +975,12 @@ width: 33%;
                     <h1 style="color: black;">Follow Us On</h1>
                     <ul>
                         <p class="social-media">
-                            <a href="https://www.linkedin.com/company/abhishyandh-global-solutions/"><i class="bi bi-linkedin text-dark mx-1"></i></a>
-                            <a href="https://github.com/AbhiFlash-Coder"><i class="bi bi-github text-dark-mx-1"></i></a>
-                            <a href=""><i class="bi bi-twitter text-dark mx-1"></i></a>
-                            <a href="https://www.facebook.com/share/BxpiEC8qP9PP6ycj/?mibextid=qi2Omg"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                            <a href="https://www.instagram.com/abhishyandh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="bi bi-instagram text-dark mx-1"></i></a>
-                            <a href-""><i class="bi bi-youtube text-dark mx-1"></i></a>
+                            <a th:href="@{https://www.linkedin.com/company/abhishyandh-global-solutions/}"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a th:href="@{https://github.com/AbhiFlash-Coder}"><i class="bi bi-github text-dark-mx-1"></i></a>
+                            
+                            <a th:href="@{https://www.facebook.com/share/BxpiEC8qP9PP6ycj/?mibextid=qi2Omg}"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a th:href="@{https://www.instagram.com/abhishyandh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==}"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                             
                           
                         </p>  
                     </ul>
@@ -936,9 +993,71 @@ width: 33%;
         </div>
     </section>
 
+
     <div class="copyright-abhishyandh">
         <p>&copy; 2023 Abhishyandh. All rights reserved.</p>
     </div>
+    
+    <!--whatsapp integration-->
+ <!-- WhatsApp Icon -->
+<div class="whatsapp-icon" id="whatsapp-icon">
+    <i class="fab fa-whatsapp"></i>
+</div>
+
+<!-- Popup -->
+<div class="popup" id="whatsapp-popup">
+    <div class="popup-header" style="color: orange;">Contact Abhishyandh</div>
+    <div class="popup-body">
+        <p style="color: green;">Feel free to send us a message below or chat directly with us on WhatsApp:</p>
+        <textarea id="message-input" placeholder="Type your message here..." style="resize: none;"></textarea>
+    </div>
+    <div class="popup-footer">
+        <button class="send-button" id="send-message-button">Send Message</button> &nbsp;&nbsp;&nbsp;
+        <button class="chat-button" id="chat-with-abhi-button">Chat with Abhishyandh</button>
+    </div>
+</div>
+
+ 
+
+<script>
+    const whatsappIcon = document.getElementById('whatsapp-icon');
+    const popup = document.getElementById('whatsapp-popup');
+    const sendMessageButton = document.getElementById('send-message-button');
+    const chatWithAbhiButton = document.getElementById('chat-with-abhi-button');
+    const messageInput = document.getElementById('message-input');
+    
+    // Toggle popup visibility
+    whatsappIcon.addEventListener('click', (event) => {
+        popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+        event.stopPropagation();  
+    });
+
+    // Send message button click
+    sendMessageButton.addEventListener('click', () => {
+        const message = encodeURIComponent(messageInput.value.trim());
+        if (message) {
+            const url = `https://wa.me/8897830910?text=${message}`;
+            window.open(url, '_blank');
+            messageInput.value = '';  
+        } else {
+            alert('Please enter a message.');
+        }
+    });
+
+    // Chat with Abhishyandh button click
+    chatWithAbhiButton.addEventListener('click', () => {
+        const prefilledMessage = encodeURIComponent('May I know more about this?');
+        const url = `https://wa.me/8897830910?text=${prefilledMessage}`;
+        window.open(url, '_blank');
+    });
+
+    // Close popup when clicking outside
+    document.addEventListener('click', (event) => {
+        if (!popup.contains(event.target) && !whatsappIcon.contains(event.target)) {
+            popup.style.display = 'none';
+        }
+    });
+</script>
 <script>
 	//navbar fixed and modify
 
